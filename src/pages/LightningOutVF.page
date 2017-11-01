@@ -1,0 +1,20 @@
+<apex:page >
+	<apex:includeLightning rendered="true"/>
+	
+	<div id="lightning-component" rendered="true" />
+	
+	<script>
+		// Initialize Lighting Out
+		$Lightning.use("c:HelloWorldDepApp", onLightningOutLoad);
+		
+		function onLightningOutLoad(){
+			$Lightning.createComponent("c:HelloWorldComponent",
+								{},
+								"lightning-component",
+								emptyCallback
+			);
+		}
+		
+		function emptyCallback() {}
+	</script>
+</apex:page>

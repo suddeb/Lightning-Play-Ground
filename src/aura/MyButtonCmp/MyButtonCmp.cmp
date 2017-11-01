@@ -1,0 +1,8 @@
+<aura:component implements="force:appHostable,flexipage:availableforAllPageTypes">
+	<div class="slds-form-element">
+  		<label class="slds-form-element__label" for="input-unique-id">My Lightning Button</label>
+  		<div class="slds-form-element__control">
+    		<lightning:button class="slds-button slds-button_success" label="Click Me" onclick="{! c.handleClick }" />
+  		</div>
+	</div>
+</aura:component>
